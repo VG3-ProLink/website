@@ -95,7 +95,7 @@ tr:last-child td{border-bottom:0}.muted{color:#6f7d8c!important}
   padding:24px;font-weight:900
 }
 .program{background:#101720}
-.timeline{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .timeline article{min-height:190px}
 .timeline span{color:#75c4ff;font-weight:900;letter-spacing:1.4px}
 .timeline h3,.compliance-grid h3,.choose-grid h3{font-size:20px;line-height:1.15;color:#fff;margin:18px 0 10px}

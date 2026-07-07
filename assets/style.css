@@ -245,3 +245,184 @@ footer{
     width:100%;
   }
 }
+
+/* =========================
+   V15 Workforce Assessment Form
+   ========================= */
+.assessment-section{
+  background:linear-gradient(135deg,#053d6b 0%,#07213a 48%,#051423 100%);
+  padding:96px 0;
+}
+.assessment-inner{
+  display:grid;
+  grid-template-columns:minmax(260px,380px) 1fr;
+  gap:54px;
+  align-items:start;
+}
+.assessment-intro h2{
+  color:#fff;
+  font-size:clamp(40px,5vw,66px);
+  line-height:.96;
+  letter-spacing:-2px;
+  margin:14px 0 24px;
+}
+.assessment-intro p{
+  color:#d7e3ef;
+  font-size:18px;
+  line-height:1.7;
+}
+.assessment-form{
+  background:#f7f9fc;
+  color:#0b1724;
+  border-radius:28px;
+  padding:30px;
+  box-shadow:0 28px 80px rgba(0,0,0,.32);
+}
+.assessment-form fieldset{
+  border:0;
+  padding:0;
+  margin:0;
+}
+.assessment-types legend,
+.form-section h3{
+  font-size:18px;
+  font-weight:900;
+  color:#0b1724;
+  margin:0 0 18px;
+}
+.assessment-types{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-bottom:28px!important;
+}
+.assessment-types legend{
+  grid-column:1/-1;
+}
+.assessment-card{
+  display:block;
+  background:#fff;
+  border:1px solid #dbe4ee;
+  border-radius:18px;
+  padding:18px 18px 18px 46px;
+  position:relative;
+  cursor:pointer;
+  transition:.2s ease;
+}
+.assessment-card:hover{
+  border-color:#1592db;
+  box-shadow:0 12px 30px rgba(10,45,78,.10);
+}
+.assessment-card input{
+  position:absolute;
+  left:18px;
+  top:21px;
+  width:16px;
+  height:16px;
+  accent-color:#0b7fd3;
+}
+.assessment-card span{
+  display:block;
+  color:#0b1724;
+  font-weight:900;
+  margin-bottom:8px;
+}
+.assessment-card small{
+  display:block;
+  color:#516173;
+  line-height:1.45;
+}
+.form-section{
+  padding:26px 0;
+  border-top:1px solid #dde7f0;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+.form-grid.two{
+  margin-top:14px;
+}
+.assessment-form input[type="text"],
+.assessment-form input[type="email"],
+.assessment-form input:not([type]),
+.assessment-form select,
+.assessment-form textarea{
+  width:100%;
+  border:1px solid #d5dfe9;
+  background:#fff;
+  color:#0b1724;
+  border-radius:12px;
+  padding:14px 15px;
+  font:inherit;
+  outline:none;
+}
+.assessment-form textarea{
+  min-height:96px;
+  resize:vertical;
+  margin-top:12px;
+}
+.assessment-form input:focus,
+.assessment-form select:focus,
+.assessment-form textarea:focus{
+  border-color:#0b7fd3;
+  box-shadow:0 0 0 4px rgba(11,127,211,.12);
+}
+.form-helper{
+  margin:0 0 12px;
+  color:#4d5d70;
+  font-weight:700;
+}
+.checkbox-grid,
+.radio-row{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px 18px;
+}
+.checkbox-grid.compact{
+  grid-template-columns:repeat(4,1fr);
+  margin-top:8px;
+}
+.checkbox-grid label,
+.radio-row label{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  color:#1d2a38;
+  font-size:14px;
+  line-height:1.35;
+}
+.checkbox-grid input,
+.radio-row input{
+  margin-top:2px;
+  accent-color:#0b7fd3;
+}
+.assessment-submit{
+  width:100%;
+  border:0;
+  border-radius:14px;
+  background:linear-gradient(135deg,#0b7fd3,#075ba8);
+  color:#fff;
+  font-weight:900;
+  padding:17px 20px;
+  cursor:pointer;
+  font-size:16px;
+  box-shadow:0 16px 35px rgba(11,127,211,.25);
+}
+.form-note{
+  color:#5b6876;
+  font-size:13px;
+  line-height:1.5;
+  margin:14px 0 0;
+  text-align:center;
+}
+@media(max-width:1100px){
+  .assessment-inner{grid-template-columns:1fr}
+  .assessment-intro{max-width:760px}
+}
+@media(max-width:760px){
+  .assessment-section{padding:70px 0}
+  .assessment-form{padding:22px;border-radius:22px}
+  .assessment-types,.form-grid,.checkbox-grid,.radio-row,.checkbox-grid.compact{grid-template-columns:1fr}
+}
